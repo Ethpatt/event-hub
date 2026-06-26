@@ -7,9 +7,9 @@ import { events } from "@/lib/events";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "UK Velo — Friendly UK Cycle Sportives" },
+      { title: "Friendly UK Cycle Sportives" },
       { name: "description", content: "Friendly UK cycling sportives with fully signed routes, mechanical support, feed stations and stunning scenery." },
-      { property: "og:title", content: "UK Velo — Friendly UK Cycle Sportives" },
+      { property: "og:title", content: "Friendly UK Cycle Sportives" },
       { property: "og:description", content: "Friendly UK cycling sportives with fully signed routes, mechanical support and stunning scenery." },
     ],
   }),
