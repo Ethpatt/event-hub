@@ -103,7 +103,7 @@ function EventDetailPage() {
           </dl>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href={e.entryUrl} className="btn-primary">
+            <a href="#enter" className="btn-primary">
               Enter Now <ArrowRight className="size-4" />
             </a>
             <Link to="/events" className="btn-outline">
@@ -225,16 +225,62 @@ function EventDetailPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="bg-secondary text-secondary-foreground py-16">
-        <div className="container-page text-center">
-          <h2 className="text-4xl md:text-5xl">Ready to ride the {e.name}?</h2>
-          <p className="mt-4 text-white/80 max-w-xl mx-auto">
-            Secure your place today. Entries from {e.price}.
-          </p>
-          <a href={e.entryUrl} className="btn-primary mt-8 inline-flex">
-            Enter Now <ArrowRight className="size-4" />
-          </a>
+      {/* Enter section */}
+      <section id="enter" className="bg-secondary text-secondary-foreground py-16 scroll-mt-20">
+        <div className="container-page max-w-2xl">
+          <div className="text-center">
+            <p className="text-xs uppercase tracking-[0.3em] text-primary font-bold">Enter the event</p>
+            <h2 className="text-4xl md:text-5xl mt-2">Sign up for the {e.name}</h2>
+            <p className="mt-4 text-white/80">
+              Fill in your details below to register. Entries from {e.price}.
+            </p>
+          </div>
+
+          <form
+            className="mt-10 bg-background text-foreground rounded-lg p-6 md:p-8 space-y-5 shadow-xl"
+            onSubmit={(ev) => {
+              ev.preventDefault();
+              const form = ev.currentTarget;
+              const data = new FormData(form);
+              const subject = `Entry: ${e.name}`;
+              const body = `Name: ${data.get("name")}\nEmail: ${data.get("email")}\nPhone: ${data.get("phone")}\nRoute: ${data.get("route")}\nNotes: ${data.get("notes")}`;
+              window.location.href = `mailto:hello@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            }}
+          >
+            <div className="grid sm:grid-cols-2 gap-4">
+              <label className="block">
+                <span className="text-xs uppercase tracking-wider font-bold text-secondary">Full name</span>
+                <input required name="name" type="text" className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
+              </label>
+              <label className="block">
+                <span className="text-xs uppercase tracking-wider font-bold text-secondary">Email</span>
+                <input required name="email" type="email" className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
+              </label>
+              <label className="block">
+                <span className="text-xs uppercase tracking-wider font-bold text-secondary">Phone</span>
+                <input name="phone" type="tel" className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
+              </label>
+              <label className="block">
+                <span className="text-xs uppercase tracking-wider font-bold text-secondary">Route</span>
+                <select required name="route" defaultValue="" className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary">
+                  <option value="" disabled>Select a route</option>
+                  {e.routes.map((r) => (
+                    <option key={r.name} value={r.name}>{r.name} — {r.distanceKm} km</option>
+                  ))}
+                </select>
+              </label>
+            </div>
+            <label className="block">
+              <span className="text-xs uppercase tracking-wider font-bold text-secondary">Notes (optional)</span>
+              <textarea name="notes" rows={3} className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
+            </label>
+            <button type="submit" className="btn-primary w-full sm:w-auto">
+              Submit entry <ArrowRight className="size-4" />
+            </button>
+            <p className="text-xs text-muted-foreground">
+              By submitting, you agree to our terms and privacy policy.
+            </p>
+          </form>
         </div>
       </section>
 

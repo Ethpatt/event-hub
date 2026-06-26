@@ -60,9 +60,9 @@ function EventsPage() {
                   <Link to="/events/$slug" params={{ slug: e.slug }} className="btn-primary">
                     View Event <ArrowRight className="size-4" />
                   </Link>
-                  <a href={e.entryUrl} className="btn-outline">
+                  <Link to="/events/$slug" params={{ slug: e.slug }} hash="enter" className="btn-outline">
                     Enter Now
-                  </a>
+                  </Link>
                 </div>
                 <Link to="/events/$slug" params={{ slug: e.slug }} className="mt-3 inline-flex items-center gap-1 text-sm text-primary font-semibold hover:underline">
                   <Info className="size-4" /> Full event details
