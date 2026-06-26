@@ -5,10 +5,10 @@ import { events } from "@/lib/events";
 export const Route = createFileRoute("/events")({
   head: () => ({
     meta: [
-      { title: "Cycle Events — UK Velo Sportives 2026" },
-      { name: "description", content: "Browse all UK Velo sportives. Friendly, fully supported cycling events across the South Downs, Somerset and the Cotswolds." },
-      { property: "og:title", content: "Cycle Events — UK Velo Sportives 2026" },
-      { property: "og:description", content: "Browse all UK Velo cycle sportives for 2026." },
+      { title: "Cycle Events — Sportives 2026" },
+      { name: "description", content: "Browse all our sportives. Friendly, fully supported cycling events across the South Downs, Somerset and the Cotswolds." },
+      { property: "og:title", content: "Cycle Events — Sportives 2026" },
+      { property: "og:description", content: "Browse all our cycle sportives for 2026." },
     ],
   }),
   component: EventsPage,
@@ -22,7 +22,7 @@ function EventsPage() {
           <p className="text-xs uppercase tracking-[0.3em] text-primary font-bold">2026 Calendar</p>
           <h1 className="text-5xl md:text-7xl mt-3">Cycle Events</h1>
           <p className="mt-4 text-white/80 max-w-xl mx-auto">
-            Pick your next adventure. Every UK Velo sportive includes signed routes, feed stations and full mechanical support.
+            Pick your next adventure. Every sportive includes signed routes, feed stations and full mechanical support.
           </p>
         </div>
       </section>
@@ -57,7 +57,7 @@ function EventsPage() {
                 </dl>
 
                 <div className="mt-8 flex gap-3">
-                  <a href={`mailto:admin@ukvelo.co.uk?subject=Entry: ${encodeURIComponent(e.name)}`} className="btn-primary">Enter Now <ArrowRight className="size-4" /></a>
+                  <a href={`mailto:hello@example.com?subject=Entry: ${encodeURIComponent(e.name)}`} className="btn-primary">Enter Now <ArrowRight className="size-4" /></a>
                 </div>
               </div>
             </article>

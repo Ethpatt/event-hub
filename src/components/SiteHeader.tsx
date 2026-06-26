@@ -13,9 +13,8 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-border">
       <div className="container-page flex items-center justify-between h-16">
         <Link to="/" className="flex items-baseline gap-1 font-display text-2xl tracking-wider">
-          <span className="text-secondary">UK</span>
-          <span className="text-secondary">VEL</span>
-          <span className="text-primary">O</span>
+          <span className="text-secondary">SPORTIVE</span>
+          <span className="text-primary">.</span>
         </Link>
         <nav className="hidden md:flex items-center gap-8">
           {nav.map((n) => (

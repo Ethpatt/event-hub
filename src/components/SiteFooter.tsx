@@ -7,7 +7,7 @@ export function SiteFooter() {
       <div className="container-page py-16 grid gap-10 md:grid-cols-4">
         <div>
           <div className="font-display text-2xl tracking-wider">
-            UK VEL<span className="text-primary">O</span>
+            SPORTIVE<span className="text-primary">.</span>
           </div>
           <p className="mt-3 text-sm text-white/70 max-w-xs">
             Friendly, fully supported UK cycling sportives designed to be enjoyed.
@@ -30,8 +30,8 @@ export function SiteFooter() {
         </div>
         <div>
           <h4 className="text-sm uppercase tracking-wider text-primary mb-3">Connect</h4>
-          <a href="mailto:admin@ukvelo.co.uk" className="flex items-center gap-2 text-sm text-white/80 hover:text-primary">
-            <Mail className="size-4" /> admin@ukvelo.co.uk
+          <a href="mailto:hello@example.com" className="flex items-center gap-2 text-sm text-white/80 hover:text-primary">
+            <Mail className="size-4" /> hello@example.com
           </a>
           <div className="flex gap-3 mt-4">
             <a href="#" aria-label="Instagram" className="size-9 grid place-items-center rounded-full border border-white/20 hover:border-primary hover:text-primary"><Instagram className="size-4" /></a>
@@ -41,7 +41,7 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-white/10">
         <div className="container-page py-5 text-xs text-white/50 flex flex-col md:flex-row justify-between gap-2">
-          <p>© {new Date().getFullYear()} UK Velo. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} All rights reserved.</p>
           <p>Friendly UK Cycle Sportives</p>
         </div>
       </div>

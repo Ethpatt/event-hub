@@ -4,8 +4,8 @@ import { PolicyPage } from "@/components/PolicyPage";
 export const Route = createFileRoute("/cookies")({
   head: () => ({
     meta: [
-      { title: "Cookie Policy — UK Velo" },
-      { name: "description", content: "How UK Velo uses cookies on its website." },
+      { title: "Cookie Policy" },
+      { name: "description", content: "How this website uses cookies." },
     ],
   }),
   component: () => (
@@ -22,7 +22,7 @@ export const Route = createFileRoute("/cookies")({
       <p>You can control cookies in your browser settings. Blocking essential cookies may stop parts of the site from working.</p>
 
       <h2>Questions</h2>
-      <p>Email <a href="mailto:admin@ukvelo.co.uk">admin@ukvelo.co.uk</a> if you'd like to know more.</p>
+      <p>Email <a href="mailto:hello@example.com">hello@example.com</a> if you'd like to know more.</p>
     </PolicyPage>
   ),
 });

@@ -7,9 +7,9 @@ import { events } from "@/lib/events";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "UK Velo — Friendly UK Cycle Sportives" },
+      { title: "Friendly UK Cycle Sportives" },
       { name: "description", content: "Friendly UK cycling sportives with fully signed routes, mechanical support, feed stations and stunning scenery." },
-      { property: "og:title", content: "UK Velo — Friendly UK Cycle Sportives" },
+      { property: "og:title", content: "Friendly UK Cycle Sportives" },
       { property: "og:description", content: "Friendly UK cycling sportives with fully signed routes, mechanical support and stunning scenery." },
     ],
   }),
@@ -31,7 +31,7 @@ function HomePage() {
         <img src={hero} alt="Cyclists riding through the countryside" width={1920} height={1080} className="absolute inset-0 size-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/60" />
         <div className="relative z-10 text-center text-white px-4 max-w-3xl">
-          <p className="text-sm md:text-base uppercase tracking-[0.3em] text-primary font-semibold">UK Velo Cycling Sportives</p>
+          <p className="text-sm md:text-base uppercase tracking-[0.3em] text-primary font-semibold">Cycling Sportives</p>
           <h1 className="mt-4 text-5xl md:text-7xl lg:text-8xl leading-none">
             Friendly UK<br />Cycle Sportives
           </h1>
@@ -60,10 +60,10 @@ function HomePage() {
       <section className="section-pad">
         <div className="container-page grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-xs uppercase tracking-[0.25em] text-primary font-bold">About UK Velo</p>
+            <p className="text-xs uppercase tracking-[0.25em] text-primary font-bold">About Us</p>
             <h2 className="text-4xl md:text-5xl mt-3 text-secondary">Cycling events designed to be enjoyed</h2>
             <div className="mt-6 space-y-4 text-foreground/80 leading-relaxed">
-              <p>UK Velo sportives are about more than just finish times. We create friendly, welcoming cycling events that focus on incredible scenery, relaxed atmospheres and rewarding days in the saddle.</p>
+              <p>Our sportives are about more than just finish times. We create friendly, welcoming cycling events that focus on incredible scenery, relaxed atmospheres and rewarding days in the saddle.</p>
               <p>Whether you're chasing your first 100km, riding with friends or taking on a new challenge, our events are designed for riders of all abilities.</p>
             </div>
             <Link to="/events" className="btn-outline mt-8">Explore Events</Link>
