@@ -41,7 +41,7 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-white/10">
         <div className="container-page py-5 text-xs text-white/50 flex flex-col md:flex-row justify-between gap-2">
-          <p>© {new Date().getFullYear()} UK Velo. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} All rights reserved.</p>
           <p>Friendly UK Cycle Sportives</p>
         </div>
       </div>
