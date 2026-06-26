@@ -1,5 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { MapPin, Calendar, Route as RouteIcon, ArrowRight } from "lucide-react";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { MapPin, Calendar, Route as RouteIcon, ArrowRight, Info } from "lucide-react";
 import { events } from "@/lib/events";
 
 export const Route = createFileRoute("/events")({
@@ -56,9 +56,17 @@ function EventsPage() {
                   </div>
                 </dl>
 
-                <div className="mt-8 flex gap-3">
-                  <a href={`mailto:hello@example.com?subject=Entry: ${encodeURIComponent(e.name)}`} className="btn-primary">Enter Now <ArrowRight className="size-4" /></a>
+                <div className="mt-8 flex flex-wrap gap-3">
+                  <Link to="/events/$slug" params={{ slug: e.slug }} className="btn-primary">
+                    View Event <ArrowRight className="size-4" />
+                  </Link>
+                  <a href={e.entryUrl} className="btn-outline">
+                    Enter Now
+                  </a>
                 </div>
+                <Link to="/events/$slug" params={{ slug: e.slug }} className="mt-3 inline-flex items-center gap-1 text-sm text-primary font-semibold hover:underline">
+                  <Info className="size-4" /> Full event details
+                </Link>
               </div>
             </article>
           ))}
