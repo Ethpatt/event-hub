@@ -31,7 +31,7 @@ function HomePage() {
         <img src={hero} alt="Cyclists riding through the countryside" width={1920} height={1080} className="absolute inset-0 size-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/60" />
         <div className="relative z-10 text-center text-white px-4 max-w-3xl">
-          <p className="text-sm md:text-base uppercase tracking-[0.3em] text-primary font-semibold">UK Velo Cycling Sportives</p>
+          <p className="text-sm md:text-base uppercase tracking-[0.3em] text-primary font-semibold">Cycling Sportives</p>
           <h1 className="mt-4 text-5xl md:text-7xl lg:text-8xl leading-none">
             Friendly UK<br />Cycle Sportives
           </h1>
