@@ -85,6 +85,7 @@ function HomePage() {
             </Link>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
+            {events.map((e) => (
               <Link key={e.slug} to="/events/$slug" params={{ slug: e.slug }} className="group bg-card rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow">
                 <div className="relative aspect-[3/2] overflow-hidden">
                   <img src={e.image} alt={e.name} width={1200} height={800} loading="lazy" className="size-full object-cover group-hover:scale-105 transition-transform duration-500" />
