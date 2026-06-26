@@ -22,7 +22,7 @@ function EventsPage() {
           <p className="text-xs uppercase tracking-[0.3em] text-primary font-bold">2026 Calendar</p>
           <h1 className="text-5xl md:text-7xl mt-3">Cycle Events</h1>
           <p className="mt-4 text-white/80 max-w-xl mx-auto">
-            Pick your next adventure. Every UK Velo sportive includes signed routes, feed stations and full mechanical support.
+            Pick your next adventure. Every sportive includes signed routes, feed stations and full mechanical support.
           </p>
         </div>
       </section>
