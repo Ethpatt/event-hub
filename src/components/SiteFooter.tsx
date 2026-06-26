@@ -30,8 +30,8 @@ export function SiteFooter() {
         </div>
         <div>
           <h4 className="text-sm uppercase tracking-wider text-primary mb-3">Connect</h4>
-          <a href="mailto:admin@ukvelo.co.uk" className="flex items-center gap-2 text-sm text-white/80 hover:text-primary">
-            <Mail className="size-4" /> admin@ukvelo.co.uk
+          <a href="mailto:hello@example.com" className="flex items-center gap-2 text-sm text-white/80 hover:text-primary">
+            <Mail className="size-4" /> hello@example.com
           </a>
           <div className="flex gap-3 mt-4">
             <a href="#" aria-label="Instagram" className="size-9 grid place-items-center rounded-full border border-white/20 hover:border-primary hover:text-primary"><Instagram className="size-4" /></a>
