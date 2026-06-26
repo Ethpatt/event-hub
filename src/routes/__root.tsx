@@ -59,9 +59,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "UK Velo — Friendly UK Cycle Sportives" },
+      { title: "Friendly UK Cycle Sportives" },
       { name: "description", content: "Friendly, fully supported UK cycling sportives designed to be enjoyed. Scenic routes, feed stations and a warm welcome." },
-      { property: "og:title", content: "UK Velo — Friendly UK Cycle Sportives" },
+      { property: "og:title", content: "Friendly UK Cycle Sportives" },
       { property: "og:description", content: "Friendly, fully supported UK cycling sportives designed to be enjoyed." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
