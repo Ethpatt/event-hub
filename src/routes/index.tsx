@@ -60,10 +60,10 @@ function HomePage() {
       <section className="section-pad">
         <div className="container-page grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-xs uppercase tracking-[0.25em] text-primary font-bold">About UK Velo</p>
+            <p className="text-xs uppercase tracking-[0.25em] text-primary font-bold">About Us</p>
             <h2 className="text-4xl md:text-5xl mt-3 text-secondary">Cycling events designed to be enjoyed</h2>
             <div className="mt-6 space-y-4 text-foreground/80 leading-relaxed">
-              <p>UK Velo sportives are about more than just finish times. We create friendly, welcoming cycling events that focus on incredible scenery, relaxed atmospheres and rewarding days in the saddle.</p>
+              <p>Our sportives are about more than just finish times. We create friendly, welcoming cycling events that focus on incredible scenery, relaxed atmospheres and rewarding days in the saddle.</p>
               <p>Whether you're chasing your first 100km, riding with friends or taking on a new challenge, our events are designed for riders of all abilities.</p>
             </div>
             <Link to="/events" className="btn-outline mt-8">Explore Events</Link>
