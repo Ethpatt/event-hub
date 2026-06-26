@@ -57,7 +57,7 @@ function EventsPage() {
                 </dl>
 
                 <div className="mt-8 flex gap-3">
-                  <a href={`mailto:admin@ukvelo.co.uk?subject=Entry: ${encodeURIComponent(e.name)}`} className="btn-primary">Enter Now <ArrowRight className="size-4" /></a>
+                  <a href={`mailto:hello@example.com?subject=Entry: ${encodeURIComponent(e.name)}`} className="btn-primary">Enter Now <ArrowRight className="size-4" /></a>
                 </div>
               </div>
             </article>
