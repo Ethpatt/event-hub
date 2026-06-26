@@ -103,7 +103,7 @@ function EventDetailPage() {
           </dl>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href={e.entryUrl} className="btn-primary">
+            <a href="#enter" className="btn-primary">
               Enter Now <ArrowRight className="size-4" />
             </a>
             <Link to="/events" className="btn-outline">
