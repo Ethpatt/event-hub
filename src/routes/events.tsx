@@ -5,10 +5,10 @@ import { events } from "@/lib/events";
 export const Route = createFileRoute("/events")({
   head: () => ({
     meta: [
-      { title: "Cycle Events — UK Velo Sportives 2026" },
-      { name: "description", content: "Browse all UK Velo sportives. Friendly, fully supported cycling events across the South Downs, Somerset and the Cotswolds." },
-      { property: "og:title", content: "Cycle Events — UK Velo Sportives 2026" },
-      { property: "og:description", content: "Browse all UK Velo cycle sportives for 2026." },
+      { title: "Cycle Events — Sportives 2026" },
+      { name: "description", content: "Browse all our sportives. Friendly, fully supported cycling events across the South Downs, Somerset and the Cotswolds." },
+      { property: "og:title", content: "Cycle Events — Sportives 2026" },
+      { property: "og:description", content: "Browse all our cycle sportives for 2026." },
     ],
   }),
   component: EventsPage,
