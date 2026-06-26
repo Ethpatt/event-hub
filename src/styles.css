@@ -81,8 +81,6 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   transition: transform 0.2s, box-shadow 0.2s;
-}
-@utility btn-primary {
   &:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -10px var(--color-primary); }
 }
 
@@ -100,8 +98,6 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   transition: background-color 0.2s, color 0.2s;
-}
-@utility btn-outline {
   &:hover { background-color: var(--color-secondary); color: var(--color-secondary-foreground); }
 }
 
