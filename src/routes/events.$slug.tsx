@@ -11,7 +11,7 @@ import {
   AlertTriangle,
   ParkingCircle,
 } from "lucide-react";
-import { getEventBySlug, events } from "@/lib/events";
+import { getEventBySlug, events, type Event } from "@/lib/events";
 
 export const Route = createFileRoute("/events/$slug")({
   loader: ({ params }) => {
@@ -48,7 +48,7 @@ export const Route = createFileRoute("/events/$slug")({
 });
 
 function EventDetailPage() {
-  const { event: e } = Route.useLoaderData();
+  const { event: e } = Route.useLoaderData() as { event: Event };
   const otherEvents = events.filter((x) => x.slug !== e.slug);
 
   return (
