@@ -4,13 +4,13 @@ import { PolicyPage } from "@/components/PolicyPage";
 export const Route = createFileRoute("/privacy")({
   head: () => ({
     meta: [
-      { title: "Privacy Policy — UK Velo" },
-      { name: "description", content: "How UK Velo collects, uses and protects your personal data." },
+      { title: "Privacy Policy" },
+      { name: "description", content: "How we collect, use and protect your personal data." },
     ],
   }),
   component: () => (
     <PolicyPage title="Privacy Policy" updated="June 2026">
-      <p>UK Velo ("we", "us", "our") is committed to protecting your personal information. This policy explains what we collect and how we use it.</p>
+      <p>We ("we", "us", "our") are committed to protecting your personal information. This policy explains what we collect and how we use it.</p>
 
       <h2>Information we collect</h2>
       <ul>
@@ -31,7 +31,7 @@ export const Route = createFileRoute("/privacy")({
       <p>We do not sell your data. We share it only with timing partners, our payment processor and emergency services where required.</p>
 
       <h2>Your rights</h2>
-      <p>You may request access, correction or deletion of your data at any time by emailing <a href="mailto:admin@ukvelo.co.uk">admin@ukvelo.co.uk</a>.</p>
+      <p>You may request access, correction or deletion of your data at any time by emailing <a href="mailto:hello@example.com">hello@example.com</a>.</p>
     </PolicyPage>
   ),
 });
